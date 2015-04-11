@@ -17,6 +17,10 @@ void main()
 	//Camera
 	ICamera* myCam = myEngine->CreateCamera(kFPS);
 
+	//Floor
+	IMesh* floorMesh = myEngine->LoadMesh("Cube.x");
+	IModel* floor = floorMesh->CreateModel(0, 0, 0);
+
 
 	// The main game loop, repeat until engine is stopped
 	while (myEngine->IsRunning())
