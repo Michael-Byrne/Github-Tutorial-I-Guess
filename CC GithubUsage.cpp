@@ -23,6 +23,11 @@ void main()
 
 		/**** Update your scene each frame here ****/
 
+		if (myEngine->KeyHit(Key_Escape))
+		{
+			myEngine->Stop();
+		}
+
 	}
 
 	// Delete the 3D engine now we are finished with it
