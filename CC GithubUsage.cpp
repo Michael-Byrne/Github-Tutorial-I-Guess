@@ -14,6 +14,9 @@ void main()
 
 	/**** Set up your scene here ****/
 
+	//Camera
+	ICamera* myCam = myEngine->CreateCamera(kFPS);
+
 
 	// The main game loop, repeat until engine is stopped
 	while (myEngine->IsRunning())
